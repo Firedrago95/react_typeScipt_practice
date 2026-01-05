@@ -1,7 +1,7 @@
-// src/App.tsx
+// src/practices/Mission2_Counter.tsx
 import { useState } from "react";
 
-function App() {
+export default function Mission2_Counter() {
   // 1. 상태 정의: 초기값은 0, 타입은 숫자(number)
   // Java의 private int count = 0; 과 유사한 역할입니다.
   const [count, setCount] = useState<number>(0);
@@ -30,5 +30,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

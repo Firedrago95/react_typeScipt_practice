@@ -26,7 +26,7 @@ export default function Mission3_List() {
                     Java의 members.stream().map(m -> ...)과 로직이 같다.    
                 */}
                 {members.map((m) => (
-                    // key는 DB의 PK입니다. 리액으의 성능을 위해 필수!
+                    // key는 DB의 PK입니다. 리액트의 성능을 위해 필수!
                     <li key={m.id} style={{ marginBottom: '10px' }}>
                         <strong>{m.name}</strong> - <span>{m.role}</span>
                     </li>
