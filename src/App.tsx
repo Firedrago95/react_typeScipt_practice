@@ -1,4 +1,4 @@
-import Mission4_Input from "./practices/Mission4_Input.tsx";
+import Mission5_Toggle from "./practices/Mission5_Toggle.tsx";
 
 export default function App() {
     return (
@@ -6,7 +6,7 @@ export default function App() {
             <h1>My React Practice Room</h1>
             <hr />
             {/* 자바의 new Mission2_Counter().render() 같은 느낌 입니다 */}
-            <Mission4_Input/>
+            <Mission5_Toggle/>
         </div>
     )
 }
