@@ -22,7 +22,13 @@ export default function Mission7_Memo() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           // 엔터키 지원
-          onKeyDown={(e) => e.key === 'Enter' && addMemo()}
+          onKeyDown={(e) => {
+            if (e.nativeEvent.isComposing) return;
+
+            if (e.key === 'Enter') {
+              addMemo();
+            }
+          }}
         />
         <button onClick={addMemo}>추가</button>
 
