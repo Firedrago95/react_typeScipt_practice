@@ -1,12 +1,11 @@
-import Mission12_CustomHook from "./practices/Mission12_CustomHook.tsx";
+import Step2_InteractiveDashboard from "./stream-dashboard-practice/Step2_InteractiveDashboard.tsx";
 
 export default function App() {
     return (
         <div>
-            <h1>My React Practice Room</h1>
+            <h1>Stream Dashboard Practice</h1>
             <hr />
-            {/* 자바의 new Mission2_Counter().render() 같은 느낌 입니다 */}
-            <Mission12_CustomHook/>
+            <Step2_InteractiveDashboard />
         </div>
     )
 }

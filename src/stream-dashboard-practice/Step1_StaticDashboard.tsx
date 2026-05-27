@@ -22,3 +22,18 @@ const mockStreamers: StreamerInfo[] = [
         isLive: true
     }
 ];
+
+export default function Step1_StaticDashboard() {
+    return (
+        <div>
+            <h1>스트리머 목록</h1>
+            {mockStreamers.map(stream => (
+                <div key={stream.streamId}>
+                    <h2>{stream.streamerName}</h2>
+                    <p>{stream.isLive ? 'ON' : 'OFF'}</p>
+                    <p>{stream.viewers.toLocaleString()}</p>
+                </div>
+            ))}
+        </div>
+    );
+}
