@@ -1,11 +1,11 @@
-import Step2_InteractiveDashboard from "./stream-dashboard-practice/Step2_InteractiveDashboard.tsx";
+import Step3_FetchDashboard from "./stream-dashboard-practice/Step3_FetchDashboard.tsx";
 
 export default function App() {
     return (
         <div>
             <h1>Stream Dashboard Practice</h1>
             <hr />
-            <Step2_InteractiveDashboard />
+            <Step3_FetchDashboard />
         </div>
     )
 }
